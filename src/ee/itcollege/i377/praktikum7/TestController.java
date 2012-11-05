@@ -12,10 +12,9 @@ public class TestController {
 	public static final Logger log = LoggerFactory.getLogger(TestController.class);
 	
 	@RequestMapping("/")
-	@ResponseBody
 	public String test() {
 		log.debug("päring jõudis kontrollerini");
-		return "test controller";
+		return "test";
 	}
 	
 	@RequestMapping("/login")
